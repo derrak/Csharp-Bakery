@@ -9,7 +9,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadPricing_NumberDivisibleByThree_True()
     {
-      
+      Bread testBread = new Bread();
+      Assert.AreEqual(true, testBread.BreadPricing(6));
     }
   }
 }
