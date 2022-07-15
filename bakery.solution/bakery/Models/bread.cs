@@ -1,23 +1,35 @@
+using System;
+
 namespace Bakery
 {
   public class Bread
   {
-    public int BreadPricing(int breadCount, int loafPrice)
+    public int LoafOrderCount {get;set;}
+    public int LoafPrice {get;set;}
+    public int BreadOrderPrice {get;set;}
+
+    public Bread(int loafOrderCount, int loafPrice)
+    {
+      LoafOrderCount = loafOrderCount;
+      LoafPrice = 5;
+    }
+
+    public void BreadPricing()
     {
       int breadPrice = 0;
 
-      for (int i = 1; i <= breadCount; i++)
+      for (int i = 1; i <= LoafOrderCount; i++)
       {
         if (i % 3 == 0)
         {
           breadPrice += 0;
         }
-        else 
+        else
         {
-          breadPrice += loafPrice;
+          breadPrice += LoafPrice;
         }
       }
-        return breadPrice;
+      BreadOrderPrice = breadPrice;
     }
   }
 }

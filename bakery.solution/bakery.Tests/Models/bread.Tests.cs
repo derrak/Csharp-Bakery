@@ -16,7 +16,7 @@ namespace Bakery.Tests
     public void BreadPricing_PriceOneLoaf_1xloafPrice()
     {
       Bread testBread = new Bread();
-      Assert.AreEqual(5, testBread.BreadPricing(1,5));
+      Assert.AreEqual(5, testBread.BreadPricing());
     }
 
     [TestMethod]
@@ -31,6 +31,12 @@ namespace Bakery.Tests
     {
       Bread testBread = new Bread();
       Assert.AreEqual(10, testBread.BreadPricing(3,5));
+    }
+        [TestMethod]
+    public void BreadPricing_PriceSixLaof_4xloafPrice()
+    {
+      Bread testBread = new Bread();
+      Assert.AreEqual(20, testBread.BreadPricing(6,5));
     }
   }
 }
