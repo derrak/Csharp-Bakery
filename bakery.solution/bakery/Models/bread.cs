@@ -2,20 +2,18 @@ namespace Bakery
 {
   public class Bread
   {
-   int loafPrice = 5;
-
-    public bool BreadPricing(int breadCount)
+    public int BreadPricing(int breadCount, int loafPrice)
     {
-    // int breadPrice = 0;
-    // for(int i = 1; i <= breadCount; i++){
-      if (breadCount % 3 == 0)
-      {
-        return true;
-      }
-      else{return false;}
+    int breadPrice = 0;
+    for(int i = 1; i <= breadCount; i++){
+      
+        breadPrice += loafPrice;
+        }
+      return breadPrice;
     }
     }
   }
+
 
 
 /* Buy 2, get 1 free (every 3rd loaf of bread is free.). 
