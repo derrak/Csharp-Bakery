@@ -4,15 +4,23 @@ namespace Bakery
   {
     public int BreadPricing(int breadCount, int loafPrice)
     {
-    int breadPrice = 0;
-    for(int i = 1; i <= breadCount; i++){
-      
-        breadPrice += loafPrice;
+      int breadPrice = 0;
+
+      for (int i = 1; i <= breadCount; i++)
+      {
+        if (i % 3 == 0)
+        {
+          breadPrice += 0;
         }
-      return breadPrice;
-    }
+        else 
+        {
+          breadPrice += loafPrice;
+        }
+      }
+        return breadPrice;
     }
   }
+}
 
 
 
