@@ -21,14 +21,14 @@ namespace Bakery.Tests
     // public void Pastry_SingleLoafCost_PastryPrice()
     // {
     //   //Arrange
-    //   int price = 5;
-    //   Pastry newPastryObj = new Pastry(1, 5);
+    //   int price = 2;
+    //   Pastry newPastryObj = new Pastry(1, 2);
 
     //   //Act
-    //   int singleLoafPrice = newPastryObj.PastryPrice;
+    //   int singlePastryPrice = newPastryObj.PastryPrice;
 
     //   //Assert
-    //   Assert.AreEqual(price, singleLoafPrice);
+    //   Assert.AreEqual(price, singlePastryPrice);
     // }
 
     // [TestMethod]
