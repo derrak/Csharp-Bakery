@@ -11,18 +11,18 @@ namespace Bakery.Tests
     {
       //Arrange
       //Act
-      Bread newBreadObj = new Bread(1,5);
+      Bread newBreadObj = new Bread(1, 5);
 
       //Assert
       Assert.AreEqual(typeof(Bread), newBreadObj.GetType());
     }
 
-        [TestMethod]
+    [TestMethod]
     public void Bread_SingleLoafCost_BreadPrice()
     {
       //Arrange
       int price = 5;
-      Bread newBreadObj = new Bread(1,5);
+      Bread newBreadObj = new Bread(1, 5);
 
       //Act
       int singleLoafPrice = newBreadObj.BreadPrice;
@@ -30,5 +30,21 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(price, singleLoafPrice);
     }
+
+    [TestMethod]
+    public void BreadCostCalc_SingleLoafCostCalc_BreadPrice()
+    {
+      //Arrange
+      int price = 5;
+      Bread newBreadObj = new Bread(1, 5);
+
+      //Act
+      int breadTotalCost = newBreadObj.BreadCostCalc();
+
+      //Assert
+      Assert.AreEqual(price, breadTotalCost);
+    }
   }
+
+
 }
