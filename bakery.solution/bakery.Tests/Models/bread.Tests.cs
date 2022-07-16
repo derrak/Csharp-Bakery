@@ -44,6 +44,20 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(price, breadTotalCost);
     }
+
+    [TestMethod]
+    public void BreadCostCalc_ThreeLoafCostCalc_2xBreadPrice()
+    {
+      //Arrange
+      int price = 5;
+      Bread newBreadObj = new Bread(1, 5);
+
+      //Act
+      int breadTotalCost = newBreadObj.BreadCostCalc();
+
+      //Assert
+      Assert.AreEqual(price*2, breadTotalCost);
+    }
   }
 
 
