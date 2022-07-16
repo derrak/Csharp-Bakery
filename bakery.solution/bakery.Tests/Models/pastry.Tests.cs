@@ -17,19 +17,19 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastryObj.GetType());
     }
 
-    // [TestMethod]
-    // public void Pastry_SingleLoafCost_PastryPrice()
-    // {
-    //   //Arrange
-    //   int price = 2;
-    //   Pastry newPastryObj = new Pastry(1, 2);
+    [TestMethod]
+    public void Pastry_SingleLoafCost_PastryPrice()
+    {
+      //Arrange
+      int price = 2;
+      Pastry newPastryObj = new Pastry(1, 2);
 
-    //   //Act
-    //   int singlePastryPrice = newPastryObj.PastryPrice;
+      //Act
+      int singlePastryPrice = newPastryObj.PastryPrice;
 
-    //   //Assert
-    //   Assert.AreEqual(price, singlePastryPrice);
-    // }
+      //Assert
+      Assert.AreEqual(price, singlePastryPrice);
+    }
 
     // [TestMethod]
     // public void PastryCostCalc_SingleLoafCostCalc_PastryPrice()
