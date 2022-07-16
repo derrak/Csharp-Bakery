@@ -31,19 +31,19 @@ namespace Bakery.Tests
       Assert.AreEqual(price, singlePastryPrice);
     }
 
-    // [TestMethod]
-    // public void PastryCostCalc_SingleLoafCostCalc_PastryPrice()
-    // {
-    //   //Arrange
-    //   int price = 5;
-    //   Pastry newPastryObj = new Pastry(1, 5);
+    [TestMethod]
+    public void PastryCostCalc_SingleLoafCostCalc_PastryPrice()
+    {
+      //Arrange
+      int price = 5;
+      Pastry newPastryObj = new Pastry(1, 5);
 
-    //   //Act
-    //   int pastryTotalCost = newPastryObj.PastryCostCalc();
+      //Act
+      int pastryTotalCost = newPastryObj.PastryCostCalc();
 
-    //   //Assert
-    //   Assert.AreEqual(price, pastryTotalCost);
-    // }
+      //Assert
+      Assert.AreEqual(price, pastryTotalCost);
+    }
 
     // [TestMethod]
     // public void PastryCostCalc_ThreeLoafCostCalc_2xPastryPrice()
