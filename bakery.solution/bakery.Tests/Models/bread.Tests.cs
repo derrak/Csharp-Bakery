@@ -50,7 +50,7 @@ namespace Bakery.Tests
     {
       //Arrange
       int price = 5;
-      Bread newBreadObj = new Bread(1, 5);
+      Bread newBreadObj = new Bread(3, 5);
 
       //Act
       int breadTotalCost = newBreadObj.BreadCostCalc();
