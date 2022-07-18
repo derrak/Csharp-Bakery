@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
+using Bakery.Models;
 
 namespace Bakery.Tests
 {
@@ -35,8 +35,8 @@ namespace Bakery.Tests
     public void PastryCostCalc_SingleLoafCostCalc_PastryPrice()
     {
       //Arrange
-      int price = 5;
-      Pastry newPastryObj = new Pastry(1, 5);
+      int price = 2;
+      Pastry newPastryObj = new Pastry(1, 2);
 
       //Act
       int pastryTotalCost = newPastryObj.PastryCostCalc();
@@ -49,8 +49,8 @@ namespace Bakery.Tests
     public void PastryCostCalc_ThreeLoafCostCalc_2xPastryPrice()
     {
       //Arrange
-      int price = 5;
-      Pastry newPastryObj = new Pastry(3, 5);
+      int price = 2;
+      Pastry newPastryObj = new Pastry(3, 2);
 
       //Act
       int pastryTotalCost = newPastryObj.PastryCostCalc();
@@ -63,8 +63,8 @@ namespace Bakery.Tests
     public void PastryCostCalc_ThreeLoafCostCalc_7xPastryPrice()
     {
       //Arrange
-      int price = 5;
-      Pastry newPastryObj = new Pastry(7, 5);
+      int price = 2;
+      Pastry newPastryObj = new Pastry(7, 2);
 
       //Act
       int pastryTotalCost = newPastryObj.PastryCostCalc();

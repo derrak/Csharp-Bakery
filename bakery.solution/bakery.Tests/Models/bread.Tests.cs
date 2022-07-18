@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
+using Bakery.Models;
 
 namespace Bakery.Tests
 {
@@ -58,7 +58,20 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(price*2, breadTotalCost);
     }
+
+      [TestMethod]
+    public void BreadCostCalc_ThreeLoafCostCalc_7xBreadPrice()
+    {
+      //Arrange
+      int price = 5;
+      Bread newBreadObj = new Bread(7, 5);
+
+      //Act
+      int breadTotalCost = newBreadObj.BreadCostCalc();
+
+      //Assert
+      Assert.AreEqual((price*4)+price, breadTotalCost);
+    }
   }
-
-
 }
+
